@@ -11,15 +11,7 @@
   "rules": {
     "react-hooks/exhaustive-deps": "off",
     "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 120,
-        "trailingComma": "es5",
-        "semi": true,
-        "singleQuote": false,
-        "useTabs": false,
-        "tabWidth": 2
-      }
+      "error"
     ]
   },
   "settings": {
