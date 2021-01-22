@@ -17,3 +17,9 @@ export const initialState = {
     error: null,
   },
 };
+
+export const ROUTES_PATH = {
+  SIGN_IN: "/login",
+  CATALOG: "/catalog",
+  PRODUCT: "/product",
+};
