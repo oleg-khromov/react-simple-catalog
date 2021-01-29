@@ -1,0 +1,129 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+.hr {
+  margin: 0 0 30px !important;
+}
+
+.header {
+  margin: 0 0 30px;
+}
+
+.toolbar {
+  justify-content: space-between;
+}
+
+.box {
+  margin: 0 0 30px;
+}
+
+.mainbox {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 40px 15px 120px;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #f44336;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-link {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 0;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+
+.group > * {
+  margin: 0 10px 0 0 !important;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.oldprice {
+  text-decoration: line-through;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+
+.textarea-wrap {
+  width: 100%;
+}
+
+.p-photo {
+  max-width: 300px;
+}
+
+.loader {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnwrap {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 !important;
+}
+
+.productcard {
+  height: 100%;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #3f51b5;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #3f51b5 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

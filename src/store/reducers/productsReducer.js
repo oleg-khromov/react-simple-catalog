@@ -1,6 +1,6 @@
-import { constants, initialState } from "../constants";
+import { constants, initialState } from "../../constants";
 
-const productsReducer = (state = initialState.product, action) => {
+const productsReducer = (state = initialState.products, action) => {
   switch (action.type) {
     case constants.PRODUCTS_FETCH.REQUESTED:
     case constants.PRODUCT_ADD.REQUESTED:
@@ -13,14 +13,14 @@ const productsReducer = (state = initialState.product, action) => {
     case constants.PRODUCTS_FETCH.SUCCEEDED:
       return {
         ...state,
-        products: action.payload.products,
+        products: action.payload,
         loading: false,
         error: null,
       };
     case constants.PRODUCT_ADD.SUCCEEDED:
       return {
         ...state,
-        products: [...state.products].concat(action.payload),
+        products: [].concat(action.payload, ...state.products).sort(),
         loading: false,
         error: null,
       };

@@ -9,6 +9,7 @@ import Main from "./containers/Main";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./styles";
+import "./styles/index.css";
 
 const App = () => {
   return (

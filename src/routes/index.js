@@ -1,8 +1,9 @@
 import { ROUTES_PATH } from "../constants";
 
-import Auth from "../containers/Auth";
-import Catalog from "../containers/Catalog";
-import Product from "../containers/Product";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
+import Catalog from "../components/Catalog";
+import Product from "../components/Product";
 
 export const privateRoutes = (userRole) =>
   [
@@ -18,7 +19,7 @@ export const privateRoutes = (userRole) =>
       exact: true,
       children: [
         {
-          path: "/:id/:action",
+          path: "/:id",
           component: Product,
           exact: true,
           children: [],
@@ -30,7 +31,13 @@ export const privateRoutes = (userRole) =>
 export const publicRoutes = [
   {
     path: ROUTES_PATH.SIGN_IN,
-    component: Auth,
+    component: SignIn,
+    exact: true,
+    children: [],
+  },
+  {
+    path: ROUTES_PATH.SIGN_UP,
+    component: SignUp,
     exact: true,
     children: [],
   },
